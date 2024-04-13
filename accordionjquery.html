@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accordionjquery</title>
+</head>
+
+<body>
+    <section>
+        <div class="caixa">
+            <ul class="accordion">
+                <li>
+                    <h2 class="accordion-header">Pergunta 1</h2>
+                    <div class="accordion-content">
+                        <p>Resposta da Pergunta 1</p>
+                    </div>
+                </li>
+                <li>
+                    <h2 class="accordion-header">Pergunta 2</h2>
+                    <div class="accordion-content">
+                        <p>Resposta da Pergunta 2</p>
+                    </div>
+                </li>
+                <li>
+                    <h2 class="accordion-header">Pergunta 3</h2>
+                    <div class="accordion-content">
+                        <p>Resposta da Pergunta 3</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <style>
+        section {
+            width: 500px;
+            height: 300px;
+            background-color: #4e158f;
+            margin: 20px auto;
+            border: 1px solid #000000;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .caixa {
+            width: 400px;
+            height: 162px;
+            margin: 20px auto;
+        }
+
+        .accordion {
+            list-style: none;
+            padding: 0;
+        }
+
+        .accordion-header {
+            cursor: pointer;
+            background-color: #ffffff;          
+            padding: 20px;
+            width: 90%;
+            text-align: left;
+            font-weight: 700;
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 10px;
+            border: 1px solid #000000;
+            background-color: #ffffff;
+        }
+
+        .accordion-header.active+.accordion-content {
+            display: block;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
