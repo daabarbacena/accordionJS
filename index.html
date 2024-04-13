@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faq accordion 3 maneiras</title>
+</head>
+<body>
+    <section>
+        <div class="caixa">
+            <button class="accordion">Pergunta 1</button>
+            <div class="painel">
+            <p>Insira aqui sua resposta...</p>
+            </div>
+
+            <button class="accordion">Pergunta 2</button>
+            <div class="painel">
+            <p>Insira aqui sua resposta...</p>
+            </div>
+
+            <button class="accordion">Pergunta 3</button>
+            <div class="painel">
+            <p>Insira aqui sua resposta...</p>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        section {
+            width: 500px;
+            height: 300px;
+            background-color: #4e158f;
+            margin: 20px auto;
+            border: 1px solid #000;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .caixa {
+            width: 400px;
+            height: 162px;
+            margin: 20px auto;
+            border: 1px solid #000000;
+
+        }
+
+        .accordion {
+            background-color: #eee;
+            color: #000000;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.5s;
+            font-weight: 700;
+        }
+
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .painel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+
+        .accordion:after {
+            content: '\02795'; 
+            font-size: 13px;
+            color: #000000;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2796";
+        }
+    </style>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+            
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
