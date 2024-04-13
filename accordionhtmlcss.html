@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accordionHtmlCss</title>
+</head>
+<body>
+    <section>
+        <div class="caixa">
+            <details>
+                <summary>Pergunta 1</summary>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem nostrum sunt id? Repudiandae in, vero culpa itaque ipsam quas delectus neque voluptatibus vel officia voluptatum minus eaque reprehenderit alias aperiam.</p>
+            </details>
+        
+            <details>
+                <summary>Pergunta 2</summary>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem nostrum sunt id? Repudiandae in, vero culpa itaque ipsam quas delectus neque voluptatibus vel officia voluptatum minus eaque reprehenderit alias aperiam.</p>
+            </details>
+        
+            <details>
+                <summary>Pergunta 3</summary>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem nostrum sunt id? Repudiandae in, vero culpa itaque ipsam quas delectus neque voluptatibus vel officia voluptatum minus eaque reprehenderit alias aperiam.</p>
+            </details>
+        </div>
+    </section>
+    <style>
+        section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        }
+        .caixa {
+        width: 300px;
+        height: 300px;
+        background: rgb(68, 111, 198);
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+        section details summary {
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            cursor: pointer;
+            background-color: rgb(40, 79, 156);
+            border-bottom: 2px solid #ffffff;
+        }
+        section details summary:hover {
+            background-color: rgb(68, 111, 198);
+            transition: 0.5s;
+        }
+        details p {
+            padding: 10px;
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            font-weight: bold;
+        }
+    </style>
+</body>
+</html>
