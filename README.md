@@ -1,7 +1,7 @@
-<H1>3 MANEIRAS DE FAZER UM ACCORDION/FAQ DE PERGUNTAS/LISTA DROPDOWN COM HTML, CSS, JAVASCRIPT OU JQUERY</H1>
+<H1>3 WAYS TO MAKE A ACCORDION/QUESTION FAQ/DROPDOWN LIST USING HTML, CSS, JAVASCRIPT OR JQUERY</H1>
 
-<h4>O arquivo index.html é o método com JavaScript</h4>
-<h4>accordionhtmlcss.html é apenas com HTML e CSS.</h4>
-<h4> Já o método com Jquery é o arquivo accordionjquery.html e o arquivo JqueryScript.js!</h4>
+<h4>The index.html is the JavaScript way.</h4>
+<h4>accordionhtmlcss.html its just using HTML and CSS.</h4>
+<h4>The Jquery way its the accordionjquery.html and JqueryScript.js!</h4>
 
-<h4>Os modelos tem algumas diferenças de design, mas realizam a  mesma função do accordion.</h4>
+<h4>The projects have some design differences, btw it does the same accordion functionality.</h4>
